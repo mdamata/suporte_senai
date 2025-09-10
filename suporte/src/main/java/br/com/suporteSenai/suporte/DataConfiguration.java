@@ -27,9 +27,12 @@ public class DataConfiguration {
 		HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
 		adapter.setDatabase(Database.MYSQL);
 		adapter.setShowSql(true);
-		adapter.setGenerateDdl(true); // só usa true se o banco não tiver criado
+		adapter.setGenerateDdl(true); // se estiver criado o banco , colocar false
 		adapter.setDatabasePlatform("org.hibernate.dialect.MySQLDialect");
 		adapter.setPrepareConnection(true);
 		return adapter;
+		
 	}
+	
+	
 }

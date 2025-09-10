@@ -12,7 +12,7 @@
 	<artifactId>suporte</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>suporte</name>
-	<description>projeto de suporte tecnico </description>
+	<description>Desenvolvimento de um site de suporte técnico</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -61,13 +61,15 @@
     <groupId>org.springframework.data</groupId>
     <artifactId>spring-data-jpa</artifactId>
   </dependency>
+
 <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
     <version>8.0.33</version>
 </dependency>
-	</dependencies>>
+
+	</dependencies>
 
 	<build>
 		<plugins>

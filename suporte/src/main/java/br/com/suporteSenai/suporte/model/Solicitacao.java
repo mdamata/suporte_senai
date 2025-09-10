@@ -8,12 +8,12 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Solicitacao implements Serializable{
+public class Solicitacao implements Serializable {
 	
-	private static final long serialVersionUID =1L;
+	private static final long serialVersionUID= 1L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO) // AUTO = AUTO INCREMENT 
 	private long id;
 	private String nif;
 	private String nomeSolicitante;
@@ -21,6 +21,14 @@ public class Solicitacao implements Serializable{
 	private String codigoPatrimonio;
 	private String descricaoProblema;
 	private String tipoProblema;
+	private String status ="pendente";
+	
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	public long getId() {
 		return id;
 	}
@@ -65,5 +73,5 @@ public class Solicitacao implements Serializable{
 	}
 	
 	
-	
+
 }
